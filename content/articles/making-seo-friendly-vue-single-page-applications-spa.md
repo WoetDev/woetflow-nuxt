@@ -1,7 +1,7 @@
 ---
 title: Making SEO-friendly Single Page Applications (SPA) in Vue
 description: Learn how to improve SEO in your Vue Single Page Applications with meta tags, structured data, pre-rendering and clean routing so search engines can more easily understand what your pages are about.
-coverUrl: https://images.pexels.com/photos/1758147/pexels-photo-1758147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+coverImage: cover-image-making-seo-friendly-vue-single-page-applications-spa.jpeg
 alt: cover-image-making-seo-friendly-vue-single-page-applications-spa
 createdAt: 2021-01-19
 ---

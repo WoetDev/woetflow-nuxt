@@ -1,7 +1,7 @@
 ---
 title: "Creating a full-stack kanban board: the Ruby on Rails API backend"
 description: Step-by-step, create a full-stack kanban board with a Vue Single Page Application (SPA) and a Ruby on Rails API. In this part, we’ll be covering how to create the Ruby on Rails backend.
-coverUrl: https://images.pexels.com/photos/301673/pexels-photo-301673.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+coverImage: cover-image-creating-a-full-stack-kanban-board-the-ruby-on-rails-api-backend.jpeg
 alt: cover-image-creating-a-full-stack-kanban-board-the-ruby-on-rails-api-backend
 createdAt: 2021-02-01
 ---

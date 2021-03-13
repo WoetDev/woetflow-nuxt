@@ -1,7 +1,7 @@
 ---
 title: "Creating a full-stack kanban board: the Vue SPA frontend"
 description: Step-by-step, create a full-stack kanban board with a Vue Single Page Application (SPA) and a Ruby on Rails API. In this part, we’ll be covering how to create the Vue frontend.
-coverUrl: https://images.pexels.com/photos/6063624/pexels-photo-6063624.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
+coverImage: cover-image-creating-a-full-stack-kanban-board-the-vue-spa-frontend.jpeg
 alt: cover-image-creating-a-full-stack-kanban-board-the-vue-spa-frontend
 createdAt: 2021-02-01
 ---
@@ -1360,7 +1360,9 @@ Run: ```yarn serve```
 
 In your Ruby on Rails API root directory, run: ```rails s```
 
-Once everything is running, you should see the following:
+Once everything is running, you should see something similar to the following:
+
+<article-image src="creating-a-full-stack-kanban-board-the-vue-spa-frontend/complete-kanban-board.jpg" alt="complete-kanban-board"></article-image>
 
 * All columns are created and filled with cards from the database. 
 
@@ -1370,6 +1372,6 @@ Once everything is running, you should see the following:
 
 * When dragging cards to different columns, they status of the card is correctly being updated when editing it. 
 
-With all these actions, you should see the HTTP requests being fired in the console and when you refresh the page, everything is still as you left it! 
+* With all these actions, you should see the HTTP requests being fired in the console and when you refresh the page, everything is still as you left it! 
 
 If something is not working as expected, you can find an overview of how the application code should look right now in [this commit](https://github.com/WoetDev/woetflow-demo-kanban-board-vue/tree/5cbfbf42e4ec77463cd6b2fdbc9515b2e841302b).

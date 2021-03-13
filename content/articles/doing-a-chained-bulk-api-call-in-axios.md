@@ -1,7 +1,7 @@
 ---
 title: Doing a chained bulk/batch API request with axios
 description: A quick tip on how to perform a bulk/batch API request chained to another API request with axios.
-coverUrl: https://images.pexels.com/photos/1210276/pexels-photo-1210276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+coverImage: cover-image-doing-a-chained-bulk-api-call-in-axios.jpeg
 alt: cover-image-doing-a-chained-bulk-api-call-in-axios
 createdAt: 2021-01-21
 ---

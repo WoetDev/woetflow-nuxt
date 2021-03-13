@@ -1,7 +1,7 @@
 ---
 title: How to add Tailwind and VueTailwind to your Vue projects
 description: A guide on how to install both Tailwind and VueTailwind in your Vue project.
-coverUrl: https://images.pexels.com/photos/158658/bokeh-blur-blue-white-158658.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+coverImage: cover-image-how-to-add-tailwind-and-vuetailwind-to-your-vue-projects.jpeg
 alt: cover-image-how-to-add-tailwind-and-vuetailwind-to-your-vue-projects
 createdAt: 2021-01-20
 ---

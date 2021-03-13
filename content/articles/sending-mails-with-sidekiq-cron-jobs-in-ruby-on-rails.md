@@ -1,7 +1,7 @@
 ---
 title: "Sending mails with sidekiq & cron jobs in Ruby on Rails"
 description: A guide on how to create emails with ActionMailer and automatically sending them on a fixed schedule using sidekiq and cron jobs. 
-coverUrl: https://images.pexels.com/photos/2264245/pexels-photo-2264245.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
+coverImage: cover-image-sending-mails-with-sidekiq-cron-jobs-in-ruby-on-rails.jpeg
 alt: cover-image-sending-mails-with-sidekiq-cron-jobs-in-ruby-on-rails
 createdAt: 2021-02-23
 ---

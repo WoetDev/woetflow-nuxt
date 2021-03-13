@@ -10,7 +10,7 @@
                 :max-width="imgSize"
                 contain
                 class="rounded-circle elevation-3 mx-auto"
-                :src="require('~/assets/profile_img.jpg')"
+                :src="require('~/assets/images/profile_img.jpg')"
               ></v-img>
               <br />
               <a

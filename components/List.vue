@@ -24,7 +24,7 @@
     },
     async fetch() {
       this.articles = await this.$content('articles')
-        .only(['title', 'description', 'coverUrl', 'slug'])
+        .only(['title', 'description', 'coverImage', 'slug'])
         .sortBy('createdAt', 'desc')
         .fetch()
     }

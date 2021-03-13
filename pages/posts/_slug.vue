@@ -6,7 +6,7 @@
         <article class="nuxt-article">
           <v-card shaped>
             <v-img
-              :src="article.coverUrl"
+              :src="`/images/covers/${article.coverImage}`"
               class="pa-9 align-end"
               gradient="to bottom left, rgba(100,115,201,.33), rgba(25,32,72,.8)"
               min-height="300"
@@ -47,12 +47,15 @@ export default {
         title: this.article.title,
         description: this.article.description,
         url: `${process.env.baseUrl}/posts/${this.$route.params.slug}`,
-        mainImage: this.article.image,
+        coverImage: `${process.env.baseUrl}/images/covers/${this.article.coverImage}`,
       };
       return getSiteMeta(metaData);
     },
   },
   head() {
+    console.log(...this.meta)
+    
+
     return {
       title: this.article.title,
       meta: [

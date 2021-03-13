@@ -1,7 +1,7 @@
 ---
 title: Using v-model to bind user input to state in the Vuex store
 description: Learn how to use v-model to bind user input to a piece of state in your Vuex store using computed setters instead of using input events and value bindings.
-coverUrl: https://images.pexels.com/photos/251603/pexels-photo-251603.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+coverImage: cover-image-using-v-model-to-bind-user-input-to-state-in-the-vuex-store.jpeg
 alt: cover-image-using-v-model-to-bind-user-input-to-state-in-the-vuex-store
 createdAt: 2021-01-16
 ---

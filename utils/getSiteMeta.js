@@ -2,7 +2,7 @@ const type = "website";
 const url = process.env.baseUrl || "http://localhost:8080";
 const title = "Posts";
 const description = "I write about web development in Vue.js and Ruby on Rails, agile, side projects or anything else that pops into my head.";
-const coverUrl = "/main-image.jpeg";
+const coverImage = `${url}/images/main-image.jpeg`;
 
 export default (meta) => {
   return [
@@ -34,8 +34,12 @@ export default (meta) => {
     {
       hid: "og:image",
       property: "og:image",
-      content: (meta && meta.coverUrl) || coverUrl,
+      content: (meta && meta.coverImage) || coverImage,
     },
+    { 
+      hid: "twitter:card",
+      name: "twitter:card", 
+      content: "summary_large_image" },
     {
       hid: "twitter:url",
       name: "twitter:url",
@@ -54,7 +58,7 @@ export default (meta) => {
     {
       hid: "twitter:image",
       name: "twitter:image",
-      content: (meta && meta.coverUrl) || coverUrl,
+      content: (meta && meta.coverImage) || coverImage,
     },
   ];
 };

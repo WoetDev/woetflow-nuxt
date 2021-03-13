@@ -1,7 +1,7 @@
 <template>
   <v-card class="mt-3" shaped>
     <v-img
-      :src="item.coverUrl"
+      :src="`/images/covers/${item.coverImage}`"
       class="pa-5 white--text align-end"
       gradient="to bottom left, rgba(100,115,201,.33), rgba(25,32,72,.8)"
       height="350px"
