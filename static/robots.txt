@@ -1,0 +1,3 @@
+Sitemap: http://woetflow.com/sitemap.xml
+User-agent: *
+Disallow:
