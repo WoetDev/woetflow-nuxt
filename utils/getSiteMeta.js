@@ -1,8 +1,8 @@
 const type = "website";
-const url = process.env.baseUrl || "http://localhost:8080";
+const url = "https://woetflow.com";
 const title = "Posts";
 const description = "I write about web development in Vue.js and Ruby on Rails, agile, side projects or anything else that pops into my head.";
-const coverImage = `${url}/images/main-image.jpeg`;
+const coverImage = "https://woetflow.com/images/main-image.jpeg";
 
 export default (meta) => {
   return [

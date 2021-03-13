@@ -28,8 +28,9 @@ export default {
     ]
   },
 
-  env: {
-    baseUrl: process.env.BASE_URL || "http://localhost:8080"
+  publicRuntimeConfig: {
+    nodeEnv: process.env.NODE_ENV,
+    baseURL: process.env.NODE_ENV === 'production' ? process.env.BASE_URL : 'http://localhost:8080'
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

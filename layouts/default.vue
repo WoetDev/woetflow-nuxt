@@ -9,12 +9,30 @@
 </template>
 
 <script>
+import getSiteMeta from '@/utils/getSiteMeta';
 import Header from "@/components/Header";
+
 export default {
   name: "App",
   components: {
     Header
-  }
+  },
+  computed: {
+    meta() {
+      const metaData = {
+        url: this.$config.baseURL,
+        coverImage: `${this.$config.baseURL}/images/main-image.jpeg`,
+      };
+      return getSiteMeta(metaData);
+    },
+  },
+  head() {
+    return {
+      meta: [
+        ...this.meta,
+      ],
+    };
+  },
 };
 </script>
 

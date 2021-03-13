@@ -40,22 +40,20 @@ import getSiteMeta from '@/utils/getSiteMeta';
 
 export default {
   name: 'ArticlePage',
+  scrollToTop: true,
   computed: {
     meta() {
       const metaData = {
         type: 'article',
         title: this.article.title,
         description: this.article.description,
-        url: `${process.env.baseUrl}/posts/${this.$route.params.slug}`,
-        coverImage: `${process.env.baseUrl}/images/covers/${this.article.coverImage}`,
+        url: `${this.$config.baseURL}/posts/${this.$route.params.slug}`,
+        coverImage: `${this.$config.baseURL}/images/covers/${this.article.coverImage}`,
       };
       return getSiteMeta(metaData);
     },
   },
   head() {
-    console.log(...this.meta)
-    
-
     return {
       title: this.article.title,
       meta: [
@@ -83,7 +81,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `${process.env.baseUrl}/posts/${this.$route.params.slug}`,
+          href: `${this.$config.baseURL}/posts/${this.$route.params.slug}`,
         },
       ],
     };
