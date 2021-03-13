@@ -79,9 +79,12 @@ export default {
     meta: {
       name: "Woet Flow",
       ogSiteName: "Woet Flow",
-      description: "I write about web development in Vue.js and Ruby on Rails, agile, side projects or anything else that pops into my head."
+      description: "I write about web development in Vue.js and Ruby on Rails, agile, side projects or anything else that pops into my head.",
+      theme_color: "#CC3F14"
     },
     manifest: {
+      name: "Woet Flow",
+      short_name: "Woet Flow",
       lang: 'en'
     }
   },
@@ -101,7 +104,7 @@ export default {
     theme: {
       themes: {
         light: {
-          primary: "#E98074",
+          primary: "#CC3F14",
           secondary: "#44318D",
           accentLight: "#E98074",
           accentGrey: "#A4B3B6",

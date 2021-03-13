@@ -20,7 +20,7 @@ export default {
 
 <style lang="scss">
 .background {
-  background-color: #ddc1bc38;
+  background-color: #FDF9F7;
 }
 
 body {

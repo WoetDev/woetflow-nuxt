@@ -9,12 +9,6 @@
           </h1>
         </router-link>
       </v-row>
-      <!-- <v-row v-if="isAuthenticated" justify="center">
-        <router-link to="/posts/new">
-          <v-btn class="mr-2" color="success">New Post</v-btn>
-        </router-link>
-        <v-btn color="error" @click.prevent="signOut">Sign out</v-btn>
-      </v-row> -->
     </v-container>
   </div>
 </template>
@@ -25,23 +19,6 @@ export default {
   name: "Header",
   data: () => ({
     logo: mdiSineWave
-  }),
-  methods: {
-    // signOut() {
-    //   this.$http.secured
-    //     .delete("/signin")
-    //     .then(() => {
-    //       delete localStorage.csrf;
-    //       delete localStorage.signedIn;
-    //       this.$store.dispatch("signOutState");
-    //     })
-    //     .catch(error => this.setError(error, "Cannot sign out"));
-    // }
-  },
-  computed: {
-    // isAuthenticated() {
-    //   return this.$store.getters.isAuthenticated;
-    // }
-  }
+  })
 };
 </script>

@@ -6,6 +6,9 @@ alt: cover-image-how-to-add-tailwind-and-vuetailwind-to-your-vue-projects
 createdAt: 2021-01-20
 ---
 
+-------
+<br>
+
 ## 1. Adding Tailwind
 Run: ```yarn add tailwindcss```
 

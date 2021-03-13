@@ -8,7 +8,7 @@ createdAt: 2021-02-23
 
 ##### 💡 Demo
 
-The code we'll be referring to during this article is from the Daily catfact project. This project uses a cron job to send out a catfact everyday to all the subscribers.
+The code we'll be referring to during this article is from the [daily catfact](https://daily-catfact.herokuapp.com/) project. This project uses a cron job to send out a catfact everyday to all the subscribers.
 
 ##### ⚙️ Code
 
