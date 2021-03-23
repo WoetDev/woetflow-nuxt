@@ -116,7 +116,7 @@ For our last step, we’ll also uncomment the rack-cors gem in the Gemfile, we�
 
 ```ruby
 ...
-\# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
+# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
 ...
 ```
@@ -129,13 +129,13 @@ Now our project and database should be setup! To test if everything is working c
 
 Since the cards belong to a user and column, we’ll first set up these endpoints. We also don’t need to support all CRUD operations for the columns and users, so this will only require an index route.
 
-So let’s create the necessary model & controller.
+Let’s start by creating the necessary model & controller.
 
 ### 2.1 Create the column model
 
 To generate the model, run: ```rails g model column label value```
 
-Both the label and value will be strings, this is the default value for the model generator so we don’t need to specify the data type for these columns. If we’d want a column to have another value then we’d need to define it as for example ```rails g model column label:text value:integer```
+Both the label and value columns will be strings, this is the default value for the model generator so we don’t need to specify the data type for these columns. If we’d want a column to have another value then we’d need to define it as for example ```rails g model column label:text value:integer```
 
 Once the generator is finished, run the migration: ```rails db:migrate```
 

@@ -291,7 +291,7 @@ gem 'sidekiq-cron'
 
 Run: ```bundle install```
 
-We could include our cron job directly in the catfact_mailer_job.rb file, but to keep it clean I prefer adding the cron job inside a separate YAML file so we can use this as the crontab file.
+We could include our cron job directly in the ```catfact_mailer_job.rb``` file, but to keep it clean I prefer adding the cron job inside a separate YAML file so we can use this as the crontab file.
 
 Run: ```touch config/schedule.yml```
 
@@ -304,7 +304,7 @@ catfact_mailer_job:
   queue: default
 ```
 
-So this file creates a cron job called ```catfact_mailer_job```, the cronline ```5 7 * * *``` states that the cron job should run the ```CatfactMailerJob``` everyday at 7:05 AM and place it on the default queue.
+This file creates a cron job called ```catfact_mailer_job```, the cronline ```5 7 * * *``` states that the cron job should run the ```CatfactMailerJob``` everyday at 7:05 AM and place it on the default queue.
 
 To test out the cronline, a good resource is [crontab.guru](https://crontab.guru).
 
@@ -374,7 +374,7 @@ We also need to set these same environment variables on Heroku, but with the Her
 
 To set the environment variables, run: ```heroku config:set SMTP_ADDRESS=<your-ses-address> SMTP_USERNAME=<your-ses-user-name> SMTP_PASSWORD=<your-ses-password>```
 
-To check if these environment variables are correctly set on Heroku, we can run: heroku config
+To check if these environment variables are correctly set on Heroku, we can run: ```heroku config```
 
 ### 4.2 Provision Redis and create a Procfile
 
@@ -384,7 +384,7 @@ Because we have an application that uses background jobs, we'll need a dyno to r
 
 To provision Redis we simply need to run one command with the Heroku CLI.
 
-Run: heroku addons:create redistogo:nano --app your-app-name
+Run: ```heroku addons:create redistogo:nano --app your-app-name```
 
 #### 4.2.2 Create a Procfile
 
@@ -444,7 +444,7 @@ Once added, we'll open up the addon in the web browser.
 
 Run: ```heroku addons:open scheduler --app your-app-name```
 
-In the web browser, click 'Add Job' and then let the command curl ```https://your-app-domain``` run everyday at 7:00 AM UTC. Here we're using the curl command to simply read our webpage, but this is all we need to do in order to ping the server and wake up our dynos.
+In the web browser, click 'Add Job' and then let the command ```curl https://your-app-domain``` run everyday at 7:00 AM UTC. Here we're using the ```curl``` command to simply read our webpage, but this is all we need to do in order to ping the server and wake up our dynos.
 
 You might've noticed that the Heroku Scheduler always uses UTC, by default the Rails app will use your local (i.e. system) time. So we'll also add a configuration to our Rails app to ensure it's running on the UTC±00:00 timezone so there's no timezone confusion between the Heroku Scheduler and our cron job.
 
@@ -457,6 +457,6 @@ class Application < Rails::Application
 end
 ```
 
-So to recap; the Heroku Scheduler will run curl ```https://your-app-domain``` at 7:00 AM UTC, which will wake up our web and worker dynos for at least 30 minutes. That will ensure that our cron job will run on the worker dyno at 7:05 AM UTC and send out our daily catfact!
+So to recap; the Heroku Scheduler will run ```curl https://your-app-domain``` at 7:00 AM UTC, which will wake up our web and worker dynos for at least 30 minutes. That will ensure that our cron job will run on the worker dyno at 7:05 AM UTC and send out our daily catfact!
 
 Now all we need to do is make sure our latest changes are deployed to production and we're done!
