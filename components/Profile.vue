@@ -40,7 +40,7 @@
               </p>
               <p>
                 I like writing about web development in Vue.js and Ruby on
-                Rails, Agile, side projects or anything else that pops into my
+                Rails, side projects or anything else that pops into my
                 head.
               </p>
               <p>
